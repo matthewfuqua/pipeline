@@ -9,8 +9,8 @@ spec:
   type: git
   params:
   - name: url
-    value: {{ .Values.PipelineResource.mainSourceCode }}
+    value: {{ .Values.pipelineresource.mainsourcecode }}
   - name: revision
-    value: {{ .Values.PipelineResource.mainBranch }}
+    value: {{ .Values.pipelineresource.mainbranch }}
   - name: sslVerify
     value: "false"
