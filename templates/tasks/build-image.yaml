@@ -49,7 +49,7 @@ spec:
       description: Identifies the location of the source code within the workspace
       name: WORKING_DIRECTORY
       type: string
-    - default: 'quay.io/ksummersill2/trivy:0.17.2'
+    - default: 'quay.vapo.va.gov/ironbank/trivy:0.22.0'
       description: Identifes the Trivy Image to use for scanning the OCI spec of the image
       name: TRIVY_IMAGE
       type: string
@@ -110,7 +110,7 @@ spec:
         - mountPath: /var/lib/containers
           name: varlibcontainers
       workingDir: $(params.WORKING_DIRECTORY)
-    - image: 'quay.io/ksummersill2/ubuntu-wget:1.0.0'
+    - image: 'quay.vapo.va.gov/vapo_tst_images/ubuntu-wget:1.0.0'
       name: send-cve-report-to-nexus3
       resources: {}
       script: >
