@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: 4-buildah-task
-  namespace: {{ .Values.Pipeline.Namespace }}
+  namespace: {{ .Values.pipeline.namespace }}
 spec:
   params:
     - default: 'false'
