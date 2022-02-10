@@ -1,1 +1,12 @@
-
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: vapo-image-registry
+  namespace: {{ .Values.pipeline.namespace }}
+  annotations:
+    app.kubernetes.io/managed-by: helm
+spec:
+  type: image
+  params:
+  - name: url
+    value: {{ .Values.pipelineresource.imagerepositorylocation }}
