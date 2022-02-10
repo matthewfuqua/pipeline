@@ -1,4 +1,6 @@
 pipeline:
   namespace: team-stros
 pipelineresource:
+  mainsourcecode:
+  mainbranch:
   imagerepositorylocation:
